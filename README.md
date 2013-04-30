@@ -24,10 +24,10 @@ Finally there's a simple web 2.0 page that extracts data from both MySQL and Cas
 Some of the technologies used:
 
 CURL
-CRON
 PHPCassa
 Cassandra
 MySQL
-XML
+Bootstrap
+JSON
 
 
