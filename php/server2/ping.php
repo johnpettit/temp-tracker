@@ -34,7 +34,7 @@
 		}
 
 		$note = "TEMP: ".$curtemp;
-		$conn = mysql_connect('localhost','root','eatmeat') or die('NO');
+		$conn = mysql_connect('localhost','','') or die('NO');
 		mysql_select_db('ping');
 		$convertdate = date('Y-m-d H:i:s',$pingtime); 
 		$res = mysql_query("INSERT INTO Ping (Host,Note,Pingdate,Temp) VALUES ('$host','$note','$convertdate',$curtemp)",$conn);
@@ -49,7 +49,7 @@
 		$postdata2["note"] = $note;
 		$postdata2["temp"] = $curtemp;
 
-		$ch2 = curl_init("http://192.168.2.88/cass/ping.php");
+		$ch2 = curl_init("http://server1/cass/ping.php");
 		curl_setopt($ch2, CURLOPT_POST,1);
   	    curl_setopt($ch2, CURLOPT_POSTFIELDS, $postdata2);
   
