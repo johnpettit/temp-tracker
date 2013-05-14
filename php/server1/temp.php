@@ -2,8 +2,8 @@
 
 	$DB_NAME = 'ping';
 	$DB_HOST = '192.168.2.89';
-	$DB_USER = 'root';
-	$DB_PASS = 'eatmeat';
+	$DB_USER = '';
+	$DB_PASS = '';
 
 	$mysqli = new mysqli($DB_HOST, $DB_USER, $DB_PASS, $DB_NAME);
 
