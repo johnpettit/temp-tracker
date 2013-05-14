@@ -19,7 +19,7 @@ So far, so good.
 
 As I've been working with Cassandra lately, I figured I'd add it into the mix. The Pi CURLs back to the main server upon completion of the MySQL insert and calls some code that does a Cassandra insert.
 
-Finally there's a simple web 2.0 page that extracts data from both MySQL and Cassandra and displays is in grpahical form as well as a raw dump.
+Finally there's a simple web 2.0 page that extracts data from both MySQL and Cassandra and displays it in graphical format as well as a raw dump.
 
 Some of the technologies used:
 
